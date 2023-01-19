@@ -1,26 +1,26 @@
 #include "ClapTrap.hpp"
 
-std::string		ClapTrap::getName(void) const {
+std::string		ClapTrap::getName() const {
 	return (this->_Name);
 }
 
-std::int32_t	ClapTrap::getHit(void) const {
+int32_t	ClapTrap::getHit() const {
 	return (this->_Hit);
 }
 
-std::int32_t	ClapTrap::getEnergy(void) const {
+int32_t	ClapTrap::getEnergy() const {
 	return (this->_Energy);
 }
 
-std::int32_t	ClapTrap::getAttackDamage(void) const {
+int32_t	ClapTrap::getAttackDamage() const {
 	return (this->_Attack_Damage);
 }
 
-ClapTrap::ClapTrap(void) {
+ClapTrap::ClapTrap() : _Name("Unnamed"), _Hit(10), _Energy(10), _Attack_Damage(0) {
 	std::cout << "Default constructor" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name) : _Name(name) {
+ClapTrap::ClapTrap(const std::string& name) : _Name(name), _Hit(10), _Energy(10), _Attack_Damage(0) {
 	std::cout << "Parametrized constructor" << std::endl;
 }
 
@@ -37,10 +37,10 @@ ClapTrap	&ClapTrap::operator = (const ClapTrap &clapTrap) {
 	return (*this);
 }
 
-ClapTrap::~ClapTrap(void) {
+ClapTrap::~ClapTrap() {
 	std::cout << "Destructor" << std::endl;
 }
 
 void	ClapTrap::attack(const std::string &target) {
-	this->_Attack_Damage
+	this->_Attack_Damage;
 }
