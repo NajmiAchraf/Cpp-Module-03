@@ -7,7 +7,7 @@
 
 class ClapTrap {
 
-private:
+protected:
 
 	std::string		_Name;
 	int32_t			_Hit;
@@ -16,16 +16,16 @@ private:
 
 public:
 
-	std::string		getName(void) const;
-	int32_t			getHit(void) const;
-	int32_t			getEnergy(void) const;
-	int32_t			getAttackDamage(void) const;
+	std::string		getName() const;
+	int32_t			getHit() const;
+	int32_t			getEnergy() const;
+	int32_t			getAttackDamage() const;
 
-	ClapTrap(void);
+	ClapTrap();
 	ClapTrap(const std::string& Name);
 	ClapTrap(const ClapTrap &clapTrap);
 	ClapTrap &operator = (const ClapTrap &clapTrap);
-	~ClapTrap(void);
+	~ClapTrap();
 
 	void	attack(const std::string &target);
 	void	takeDamage(unsigned int amount);
