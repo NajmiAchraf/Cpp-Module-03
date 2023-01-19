@@ -8,7 +8,7 @@ ScavTrap::ScavTrap() {
 	this->_Attack_Damage = 20;
 }
 
-ScavTrap::ScavTrap(const std::string& name) {
+ScavTrap::ScavTrap(const std::string &name) {
 	std::cout << "Parametrized constructor ScavTrap" << std::endl;
 	this->_Name = name;
 	this->_Hit = 100;

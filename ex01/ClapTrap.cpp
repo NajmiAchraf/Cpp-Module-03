@@ -20,7 +20,7 @@ ClapTrap::ClapTrap() : _Name("Unnamed"), _Hit(10), _Energy(10), _Attack_Damage(0
 	std::cout << "Default constructor ClapTrap" << std::endl;
 }
 
-ClapTrap::ClapTrap(const std::string& name) : _Name(name), _Hit(10), _Energy(10), _Attack_Damage(0) {
+ClapTrap::ClapTrap(const std::string &name) : _Name(name), _Hit(10), _Energy(10), _Attack_Damage(0) {
 	std::cout << "Parametrized constructor ClapTrap" << std::endl;
 }
 

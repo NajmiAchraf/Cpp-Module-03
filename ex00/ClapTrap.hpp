@@ -22,7 +22,7 @@ public:
 	int32_t			getAttackDamage(void) const;
 
 	ClapTrap(void);
-	ClapTrap(const std::string& Name);
+	ClapTrap(const std::string &name);
 	ClapTrap(const ClapTrap &clapTrap);
 	ClapTrap &operator = (const ClapTrap &clapTrap);
 	~ClapTrap(void);
