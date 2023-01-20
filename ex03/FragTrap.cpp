@@ -4,16 +4,16 @@ FragTrap::FragTrap() {
 	std::cout << "Default constructor FragTrap" << std::endl;
 	this->_Name = "Unnamed";
 	this->_Hit = 100;
-	this->_Energy = 50;
-	this->_Attack_Damage = 20;
+	this->_Energy = 100;
+	this->_Attack_Damage = 30;
 }
 
 FragTrap::FragTrap(const std::string &name) {
 	std::cout << "Parametrized constructor FragTrap" << std::endl;
 	this->_Name = name;
 	this->_Hit = 100;
-	this->_Energy = 50;
-	this->_Attack_Damage = 20;
+	this->_Energy = 100;
+	this->_Attack_Damage = 30;
 }
 
 FragTrap::FragTrap(const FragTrap &fragTrap) {

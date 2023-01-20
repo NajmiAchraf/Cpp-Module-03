@@ -1,17 +1,14 @@
-#include "FragTrap.hpp"
-#include "ScavTrap.hpp"
+#include "DiamondTrap.hpp"
 
 int	main () {
-	ClapTrap	Ralf("Ralf");
-	ScavTrap	Leon("Leon");
-	FragTrap	John("John");
+	FragTrap	fragTrap("FragTrap");
+	ScavTrap	scavTrap("ScavTrap");
+	DiamondTrap	diamondTrap("DiamondTrap");
 
-	Ralf.attack(Leon.getName());
-	Leon.takeDamage(Ralf.getAttackDamage());
-	Leon.beRepaired(5);
-	Leon.attack(Ralf.getName());
-	Ralf.takeDamage(Leon.getAttackDamage());
-	Ralf.beRepaired(5);
-	John.highFivesGuys();
+	fragTrap.attack("FragTrap");
+	scavTrap.attack("ScavTrap");
+	diamondTrap.attack("DiamondTrap");
+	diamondTrap.whoAmI();
+
 	return EXIT_SUCCESS;
 }

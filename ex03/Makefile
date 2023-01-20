@@ -20,13 +20,14 @@ NAME_UP = $(shell echo $(NOM) | tr  '[:lower:]' '[:upper:]')
 CPP = c++
 
 CPPFLAGS = -Wall -Werror -Wextra -std=c++98
-CPPFLAGS += -g -fsanitize=address
+# CPPFLAGS += -g -fsanitize=address
 
 SRCS = \
 	main.cpp		\
 	ClapTrap.cpp	\
 	ScavTrap.cpp	\
 	FragTrap.cpp	\
+	DiamondTrap.cpp
 
 CPL = 0
 
