@@ -3,23 +3,22 @@
 
 # include <iostream>
 # include <cstdlib>
-# include <cstdint>
 
 class ClapTrap {
 
 protected:
 
 	std::string		_Name;
-	int32_t			_Hit;
-	int32_t			_Energy;
-	int32_t			_Attack_Damage;
+	int			_Hit;
+	int			_Energy;
+	int			_Attack_Damage;
 
 public:
 
 	std::string		getName() const;
-	int32_t			getHit() const;
-	int32_t			getEnergy() const;
-	int32_t			getAttackDamage() const;
+	int			getHit() const;
+	int			getEnergy() const;
+	int			getAttackDamage() const;
 
 	ClapTrap();
 	ClapTrap(const std::string &name);

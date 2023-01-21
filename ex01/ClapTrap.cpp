@@ -4,15 +4,15 @@ std::string		ClapTrap::getName() const {
 	return (this->_Name);
 }
 
-int32_t	ClapTrap::getHit() const {
+int	ClapTrap::getHit() const {
 	return (this->_Hit);
 }
 
-int32_t	ClapTrap::getEnergy() const {
+int	ClapTrap::getEnergy() const {
 	return (this->_Energy);
 }
 
-int32_t	ClapTrap::getAttackDamage() const {
+int	ClapTrap::getAttackDamage() const {
 	return (this->_Attack_Damage);
 }
 
@@ -31,6 +31,7 @@ ClapTrap::ClapTrap(const ClapTrap &clapTrap) {
 
 ClapTrap	&ClapTrap::operator = (const ClapTrap &clapTrap) {
 	std::cout << "Copy assignment constructor ClapTrap" << std::endl;
+	this->_Name = clapTrap.getName();
 	this->_Hit = clapTrap.getHit();
 	this->_Energy = clapTrap.getEnergy();
 	this->_Attack_Damage = clapTrap.getAttackDamage();

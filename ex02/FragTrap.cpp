@@ -23,6 +23,7 @@ FragTrap::FragTrap(const FragTrap &fragTrap) {
 
 FragTrap	&FragTrap::operator = (const FragTrap &fragTrap) {
 	std::cout << "Copy assignment constructor FragTrap" << std::endl;
+	this->_Name = fragTrap.getName();
 	this->_Hit = fragTrap.getHit();
 	this->_Energy = fragTrap.getEnergy();
 	this->_Attack_Damage = fragTrap.getAttackDamage();

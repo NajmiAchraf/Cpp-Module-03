@@ -25,6 +25,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap &diamondTrap) {
 
 DiamondTrap	&DiamondTrap::operator = (const DiamondTrap &diamondTrap) {
 	std::cout << "Copy assignment constructor DiamondTrap" << std::endl;
+	this->_Name = diamondTrap.getName();
 	this->_Hit = diamondTrap.getHit();
 	this->_Energy = diamondTrap.getEnergy();
 	this->_Attack_Damage = diamondTrap.getAttackDamage();

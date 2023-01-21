@@ -23,6 +23,7 @@ ScavTrap::ScavTrap(const ScavTrap &scavTrap) {
 
 ScavTrap	&ScavTrap::operator = (const ScavTrap &scavTrap) {
 	std::cout << "Copy assignment constructor ScavTrap" << std::endl;
+	this->_Name = scavTrap.getName();
 	this->_Hit = scavTrap.getHit();
 	this->_Energy = scavTrap.getEnergy();
 	this->_Attack_Damage = scavTrap.getAttackDamage();
